@@ -5,6 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lista de tarefas completa</title>
+
+    <!-- puxando os estilos css -->
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- scripts do Javascript -->
+
+    <script src="js/scripts.js"></script>
+
+    <!-- Puxando a biblioteca do boxicons -->
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
 </head>
 <body>
 
@@ -12,16 +25,28 @@
 
         <header>
 
-            my-list
+         <h1>my-list</h1>   
 
         </header>
 
-        <form action="">
+        <form action="" id="form-list">
 
-            <input type="text" id="input-form" placeholder="escreva aqui">
+            <input type="text" id="input-list" placeholder="escreva aqui">
             <button type="submit">
-                <i></i>
+                <box-icon type='solid' name='add-to-queue'></box-icon>
             </button>
+        </form>
+
+        <form action="" id="form-edit">
+            <div class="edit-content">
+                <h2>Edite aqui: </h2>
+                <input type="text" id="input-edit" />
+
+                <button type="submit">
+                    <box-icon type='solid' name='edit-alt'></box-icon>
+                </button>
+            </div>
+
         </form>
     </div>
     
